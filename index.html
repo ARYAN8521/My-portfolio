@@ -31,6 +31,105 @@
             --hover-transform: translateY(-5px);
         }
 
+
+        
+
+/* --- THE ORACLE DESIGN --- */ 
+
+
+.brand-red { 
+    color: #ff0000 !important; /* Makes Oracle Red */
+    font-weight: bold; 
+}
+
+.oracle-main-box {
+    border: 2px solid #00d2ff; /* The Glowing Blue Border */
+    background-color: #050a18;
+    border-radius: 15px;
+    padding: 50px 20px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.oracle-nav-pill {
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    border: 1.5px solid #00d2ff; 
+    padding: 5px 15px; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    color: white;
+}
+
+
+/* --- EXACT MATCH DESIGN --- */
+
+/* Force Oracle to be RED */
+.oracle-red-text {
+    color: #ff0000 !important;
+    font-weight: 900 !important;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+/* Glowing Outer Box */
+.oracle-main-container {
+    background-color: #050a18;
+    border: 2px solid #00d2ff;
+    border-radius: 20px;
+    padding: 60px 20px;
+    margin: 40px auto;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+    text-align: center;
+}
+
+/* Individual Card Hover Effect */
+.cert-card-box {
+    background: #0b1426;
+    border: 1.5px solid rgba(0, 210, 255, 0.3);
+    border-radius: 15px;
+    padding: 35px 25px;
+    transition: all 0.4s ease;
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+}
+
+.cert-card-box:hover {
+    transform: translateY(-10px);
+    border-color: #00d2ff;
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.3);
+}
+
+/* View Credential Button Hover Effect */
+.view-btn-glow {
+    background: #4fd1c5 !important;
+    color: #050a18 !important;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.view-btn-glow:hover {
+    background: #ffffff !important;
+    box-shadow: 0 0 20px #4fd1c5 !important;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+        
         /* Light Theme */
         [data-theme="light"] {
             --primary-bg: #f8fafc;
@@ -1356,6 +1455,14 @@
             <a class="btn" href="#certificates">Certificates</a>
             <a class="btn" href="#internships">Internships</a>
             <a class="btn" href="#contact">Contact</a>
+                
+<a class="oracle-nav-pill" href="#my-certs">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+    </svg>
+    <span><strong class="brand-red">Oracle</strong> Certifications</span>
+</a>
+
         </nav>
 
 
@@ -1462,7 +1569,41 @@
 
 
 
-        
+
+    
+ <!-- ORACLE -->
+<section class="oracle-main-container" id="my-certs">
+    <h1 style="color: #4fd1c5; font-size: 2.8rem; margin-bottom: 5px;">
+        My <span class="oracle-red-text">Oracle</span> Professional Journey
+    </h1>
+    <div style="width: 80px; height: 4px; background: #4fd1c5; margin: 0 auto 50px; border-radius: 2px;"></div>
+
+    <div class="cert-flex-grid">
+        <div class="cert-card-box">
+            <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2" style="margin-bottom: 20px;"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+            <h3 style="color: white; font-size: 1.6rem; margin-bottom: 10px;">NetSuite BI</h3>
+            <p style="color: #94a3b8; margin-bottom: 25px;">Expertise in financial systems and data visualization configuration.</p>
+            <a href="YOUR_LINK" class="view-btn-glow">View Credential</a>
+        </div>
+
+        <div class="cert-card-box" style="border-width: 2px; border-color: #00d2ff;">
+            <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2" style="margin-bottom: 20px;"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect></svg>
+            <h3 style="color: white; font-size: 1.6rem; margin-bottom: 10px;">AI Autonomous DB</h3>
+            <p style="color: #94a3b8; margin-bottom: 25px;">Implementing AI-driven secure database management solutions.</p>
+            <a href="YOUR_LINK" class="view-btn-glow">View Credential</a>
+        </div>
+
+        <div class="cert-card-box">
+            <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2" style="margin-bottom: 20px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <h3 style="color: white; font-size: 1.6rem; margin-bottom: 10px;">Analytics Cloud</h3>
+            <p style="color: #94a3b8; margin-bottom: 25px;">Advanced cloud analytics and visualization expert professional.</p>
+            <a href="YOUR_LINK" class="view-btn-glow">View Credential</a>
+        </div>
+    </div>
+</section>
+
+
+    
 
        <!-- Projects: Data -->
 <section id="projects-data" class="loading">
